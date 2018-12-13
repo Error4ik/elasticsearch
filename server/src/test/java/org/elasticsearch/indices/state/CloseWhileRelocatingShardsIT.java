@@ -65,7 +65,7 @@ public class CloseWhileRelocatingShardsIT extends ESIntegTestCase {
     }
 
     public void testCloseWhileRelocatingShards() throws Exception {
-        final String[] indices = new String[randomIntBetween(3, 10)];
+        final String[] indices = new String[randomIntBetween(1, 5)];
         final Map<String, Long> docsPerIndex = new HashMap<>();
 
         for (int i = 0; i < indices.length; i++) {
